@@ -1,8 +1,9 @@
 @import "./utils/variables";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/capabillity";
-@import "./components/what-we-do";
-@import "./components/our-team";
-@import "./components/clients";
-@import "./components/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/capabillity";
+@import "./layout/what-we-do";
+@import "./layout/our-team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./components/modal";

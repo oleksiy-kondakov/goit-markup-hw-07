@@ -6,6 +6,16 @@
     padding-bottom: 60px;
     align-items: baseline;
   }
+  &-social-link-container {
+    width: 206px;
+    text-align: start;
+    margin-right: 93px;
+  }
+  &-contacts-list-item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .logo-black {
@@ -33,16 +43,7 @@
   margin-right: 69px;
   width: 231px;
 }
-.footer-social-link-container {
-  width: 206px;
-  text-align: start;
-  margin-right: 93px;
-}
-.footer-contacts-list-item {
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
-}
+
 .contacts-list-footer-item-link {
   font-family: Roboto;
   font-weight: 500;
@@ -59,46 +60,7 @@
   }
 }
 
-/* ВЫРЕЗАНЫЙ КУСОК */
-
-.social-media-link-list {
-  display: flex;
-  justify-content: space-between;
-  max-width: 206px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 16px;
-  margin-bottom: 24px;
-}
-
-.social-media-link-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-  &:hover,
-  &:focus {
-    background-color: $hover-text-color;
-    .social-media-link-item-svg {
-      fill: #ffffff;
-    }
-  }
-}
-
-.social-media-link-item-svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* ВЫРЕЗАНЫЙ КУСОК */
+@import "../components/social-media-list";
 .social-links-footer {
   font-style: normal;
   font-weight: bold;
@@ -125,12 +87,12 @@
 }
 
 /*ФОРМА*/
-.submit-form-container {
-  max-width: 570px;
-}
 .submit-form {
   display: flex;
   max-width: 100%;
+  &-container {
+    max-width: 570px;
+  }
 }
 .submit-text {
   display: block;
@@ -193,13 +155,12 @@
       fill: #2196f3;
     }
   }
-}
+  &-icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.footer-submit-btn-icon {
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  margin-left: 10px;
+    margin-left: 10px;
+  }
 }

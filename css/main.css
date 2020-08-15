@@ -368,6 +368,14 @@ img {
   margin-right: 30px;
 }
 
+.contacts-list-item-icon {
+  width: 16px;
+  height: 14px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contacts-list-item-link {
   display: flex;
   padding-top: 32px;
@@ -391,14 +399,6 @@ img {
   fill: #2196f3;
 }
 
-.contacts-list-item-icon {
-  width: 16px;
-  height: 14px;
-  margin-right: 10px;
-  fill: #757575;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .hero {
   display: flex;
   max-width: 1600px;
@@ -414,19 +414,6 @@ img {
 .hero-content {
   max-width: 100%;
   height: 100%;
-}
-
-.main-header {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding-top: 200px;
-  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -456,6 +443,19 @@ img {
 .hero-button:hover, .hero-button:focus {
   background-color: #f5f4fa;
   color: #2196f3;
+}
+
+.main-header {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .capabillity-header {
@@ -688,6 +688,16 @@ img {
   align-items: baseline;
 }
 
+.footer-social-link-container {
+  width: 206px;
+  text-align: start;
+  margin-right: 93px;
+}
+
+.footer-contacts-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .logo-black {
   font-family: Raleway;
   font-style: normal;
@@ -716,16 +726,6 @@ img {
   width: 231px;
 }
 
-.footer-social-link-container {
-  width: 206px;
-  text-align: start;
-  margin-right: 93px;
-}
-
-.footer-contacts-list-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .contacts-list-footer-item-link {
   font-family: Roboto;
   font-weight: 500;
@@ -741,7 +741,6 @@ img {
   color: #2196f3;
 }
 
-/* ВЫРЕЗАНЫЙ КУСОК */
 .social-media-link-list {
   display: flex;
   justify-content: space-between;
@@ -781,7 +780,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ВЫРЕЗАНЫЙ КУСОК */
 .social-links-footer {
   font-style: normal;
   font-weight: bold;
@@ -807,13 +805,13 @@ img {
 }
 
 /*ФОРМА*/
-.submit-form-container {
-  max-width: 570px;
-}
-
 .submit-form {
   display: flex;
   max-width: 100%;
+}
+
+.submit-form-container {
+  max-width: 570px;
 }
 
 .submit-text {

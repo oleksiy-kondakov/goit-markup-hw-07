@@ -35,13 +35,13 @@
 }
 .what-we-do-list {
   display: flex;
-}
-.what-we-do-list-item {
-  position: relative;
+  &-item {
+    position: relative;
 
-  width: 370px;
-  height: auto;
-  &:not(:last-child) {
-    margin-right: 30px;
+    width: 370px;
+    height: auto;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
